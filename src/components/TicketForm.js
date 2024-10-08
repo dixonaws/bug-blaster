@@ -45,10 +45,9 @@ export default function TicketForm({dispatch}) {
             </div>
             <div>
                 <label>Description</label>
-                <input className='form-input'
+                <input className='form-input-textarea'
                        type="textarea"
                        value={description}
-                       rows={"5"}
                        onChange={(e) => setDescription(e.target.value)}/>
             </div>
             <fieldset className={"priority-fieldset"}>
