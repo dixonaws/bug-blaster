@@ -88,6 +88,10 @@ label {
     border-radius: 5px;
     border: 1px solid #ccc;
     min-height: 200px;
+    text-align: start;
+    vertical-align: middle;
+    display: table-cell;
+    contenteditable: true;
 }
 
 
