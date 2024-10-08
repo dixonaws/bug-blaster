@@ -2,8 +2,8 @@ import './App.css';
 import './styles.css';
 import TicketForm from "./components/TicketForm";
 
-
 function App() {
+
     return (
         <div className="App">
             <div className='container'>

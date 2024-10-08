@@ -21,6 +21,16 @@ export default function TicketForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
         clearForm();
+
+        const ticketData={
+            id: new Date().toISOString(),
+            title,
+            description,
+            priority,
+
+        }
+
+        console.log(ticketData);
     }
 
     return (
@@ -31,7 +41,10 @@ export default function TicketForm() {
             </div>
             <div>
                 <label>Description</label>
-                <input className='form-input' type="textarea" value={description}
+                <input className='form-input'
+                       type="textarea"
+                       value={description}
+                       rows={"5"}
                        onChange={(e) => setDescription(e.target.value)}/>
             </div>
             <fieldset className={"priority-fieldset"}>
